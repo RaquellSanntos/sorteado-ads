@@ -33,10 +33,11 @@
 
     <Button
         android:id="@+id/bt_primary"
-        android:layout_margin="16dp"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:onClick="sortearAluno"
         android:text="@string/string_escolher_vencedor" />
 
     <TextView
