@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_first_semester.*
 import kotlin.random.Random
 
 class FirstSemesterActivity : AppCompatActivity() {
@@ -56,14 +57,16 @@ class FirstSemesterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_semester)
-        sorteado = findViewById(R.id.tx_sorteado) as TextView
 
+        bt_primary.setOnClickListener {
+            sortearAluno()
+        }
     }
-    fun sortearAluno( view: View){
+    fun sortearAluno( ){
         val totalIntensArray = alunos.size
         val randomNumbers = Random.nextInt(totalIntensArray)
-
-        sorteado.setText(alunos[randomNumbers])
+        tx_sorteado.setText(alunos[randomNumbers])
     }
+
 
 }

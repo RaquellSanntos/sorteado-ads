@@ -37,7 +37,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:onClick="sortearAluno"
         android:text="@string/string_escolher_vencedor" />
 
     <TextView
@@ -45,12 +44,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:padding="8dp"
         android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/string_nenhum_sorteado"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="24sp"
-        android:text="@string/string_nenhum_sorteado" />
+        android:textStyle="bold" />
 
 
 </LinearLayout>
