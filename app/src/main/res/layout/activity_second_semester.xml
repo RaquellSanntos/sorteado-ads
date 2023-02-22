@@ -38,7 +38,7 @@
         android:text="@string/string_escolher_vencedor" />
 
     <TextView
-        android:id="@+id/txtView"
+        android:id="@+id/tx_sorteado2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
